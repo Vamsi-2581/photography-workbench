@@ -48,6 +48,28 @@ It is the project's one list of what is broken, deferred or wanted.
   rather than a place in a queue.
 - **Anything else** (a docs fix, a question) — a blank issue is fine.
 
+### Issue labels
+
+Labels help sort issues by the part of the project they affect, the kind of
+work, and whether the issue is ready to start:
+
+- **Area:** `photography-workbench` is the app; `desktop-ui`, `catalog`, and
+  `previews` name the crates they touch. Use `ci` for workflows, hooks, and
+  scripts, and `docs` for documentation (this replaces the older
+  `documentation` label).
+- **Kind:** `security`, `performance`, `testing`, and `accessibility` mark
+  those concerns.
+- **Platform:** `platform: windows`, `platform: macos`, and `platform: linux`
+  mark behavior that is specific to that system.
+- **Readiness:** `needs-decision` means the issue needs a maintainer decision
+  before work starts; `blocked` means it is waiting on something outside the
+  project, such as a dependency release. `good first issue` marks a suitable
+  place for a first contribution.
+
+Maintainers add labels to new issues, so reporters do not need to choose
+them. When adding a crate under `crates/`, maintainers add its area label at
+the same time.
+
 For anything bigger than a small fix, please open or find an issue **before**
 you start, so we can agree on the approach before you spend time on it.
 
